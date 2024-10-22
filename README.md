@@ -1,1 +1,4 @@
-# taskLinecode
+int main() { std::srand(std::time(0)); std::string answer = std::string({ 75, 69, 89, 66, 79, 65, 82, 68 }); int index; std::string user_input; while (true) { std::cout << "If I have keys but open no locks, what am I? (1: Hint, 2: Guess in CAPS)" << std::endl; int choice; std::cin >> choice; if (choice == 1) { index = rand() % answer.size(); std::cout << "Hint: Letter " << answer[index] << " is at position " << index + 1 << " in the riddle word" << std::endl; } else if (choice == 2) { std::cout << "Type your guess: "; std::cin >> user_input; if (user_input == "KEYBOARD") { std::cout << "Correct!" << std::endl; break; } else { std::cout << "Wrong. Try again!" << std::endl; } } } return 0; }
+
+
+тут і загадка і розгадка))) треба тільки запустити в компіляторі та дописати інклюди (зробила одразу в меін)
